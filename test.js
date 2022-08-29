@@ -9,13 +9,29 @@ btn.addEventListener("click", function(e){
     b.value = ""
 
     for(let i = 0; i < c.length; i++){
-        if(c[i] == "A" || c[i] == "a"){
+        if(c[i] == "A" || c[i] == "a" || c[i] == "á" || c[i] == "ã" || c[i] == "à" || c[i] == "â" || c[i] == "ª" || c[i] == "ä" || c[i] == "å" || c[i] == "æ"){
             if(c[[i]] == "A"){
                 b.value += "01000001 "
-            } else{
+            } else if(c[i] == "a"){
                 b.value += "01100001 "
+            } else if(c[i] == "á"){
+                b.value += "11100001 "
+            } else if(c[i] == "ã"){
+                b.value += "11100011 "
+            } else if(c[i] == "à"){
+                b.value += "11100000 "
+            } else if(c[i] == "â"){
+                b.value += "11100010 "
+            } else if(c[i] == "ª"){
+                b.value += "10101010 "
+            } else if(c[i] == "ä"){
+                b.value += "11100100 "
+            } else if(c[i] == "å"){
+                b.value += "11100101 "
+            } else{
+                b.value += "11100110 "
             }
-        } 
+        }
         if(c[i] == "B" || c[i] == "b"){
             if(c[i] == "B"){
                 b.value += "01000010 "
@@ -23,11 +39,13 @@ btn.addEventListener("click", function(e){
                 b.value += "01100010 "
             }
         }
-        if(c[i] == "C" || c[i] == "c"){
+        if(c[i] == "C" || c[i] == "c" || c[i] == "ç"){
             if(c[i] == "C"){
                 b.value += "01000011 "
-            } else{
+            } else if(c[i] == "c"){
                 b.value += "01100011 "
+            } else{
+                b.value += "11100111 "
             }
         }
         if(c[i] == "D" || c[i] == "d"){
@@ -37,11 +55,19 @@ btn.addEventListener("click", function(e){
                 b.value += "01100100 "
             }
         }
-        if(c[i] == "E" || c[i] == "e"){
+        if(c[i] == "E" || c[i] == "e" || c[i] == "é" || c[i] == "ê" || c[i] == "è" || c[i] == "ë"){
             if(c[i] == "E"){
                 b.value += "01000101 "
-            } else{
+            } else if(c[i] == "e"){
                 b.value += "01100101 "
+            } else if(c[i] == "é"){
+                b.value += "11101001 "
+            } else if(c[i] == "ê"){
+                b.value += "11101010 "
+            } else if(c[i] == "è"){
+                b.value += "11101000 "
+            } else{
+                b.value += "11101011 "
             }
         }
         if(c[i] == "F" || c[i] == "f"){
@@ -65,11 +91,19 @@ btn.addEventListener("click", function(e){
                 b.value += "01101000 "
             }
         }
-        if(c[i] == "I" || c[i] == "i"){
+        if(c[i] == "I" || c[i] == "i" || c[i] == "í" || c[i] == "î" || c[i] == "ì" || c[i] == "ï"){
             if(c[i] == "I"){
                 b.value += "01001001 "
-            } else{
+            } else if(c[i] == "i"){
                 b.value += "01101001 "
+            } else if(c[i] = "í"){
+                b.value += "11101101 "
+            } else if(c[i] == "î"){
+                b.value += "11101110 "
+            } else if(c[i] == "ì"){
+                b.value += "11101100 "
+            } else{
+                b.value += "11101111 "
             }
         }
         if(c[i] == "J" || c[i] == "j"){
@@ -100,18 +134,34 @@ btn.addEventListener("click", function(e){
                 b.value += "01101101 "
             }
         }
-        if(c[i] == "N" || c[i] == "n"){
+        if(c[i] == "N" || c[i] == "n" || c[i] == "ñ"){
             if(c[i] == "N"){
                 b.value += "01001110 "
-            } else{
+            } else if(c[i] == "n"){
                 b.value += "01101110 "
+            } else{
+                b.value += "11110001 "
             }
         }
-        if(c[i] == "O" || c[i] == "o"){
+        if(c[i] == "O" || c[i] == "o" || c[i] == "ó" || c[i] == "õ" || c[i] == "ô" || c[i] == "ò" || c[i] == "º" || c[i] == "ö" || c[i] == "ø"){
             if(c[i] == "O"){
                 b.value += "01001111 "
-            } else{
+            } else if(c[i] == "o"){
                 b.value += "01101111 "
+            } else if(c[i] == "ó"){
+                b.value += "11110011 "
+            } else if(c[i] == "õ"){
+                b.value += "11110101 "
+            } else if(c[i] == "ô"){
+                b.value += "11110100 "
+            } else if(c[i] == "ò"){
+                b.value += "11110010 "
+            } else if(c[i] == "º"){
+                b.value += "10111010 "
+            } else if(c[i] == "ö"){
+                b.value += "11110110 "
+            } else{
+                b.value += "11111000 "
             }
         }
         if(c[i] == "P" || c[i] == "p"){
@@ -149,11 +199,19 @@ btn.addEventListener("click", function(e){
                 b.value += "01110100 "
             }
         }
-        if(c[i] == "U" || c[i] == "u"){
+        if(c[i] == "U" || c[i] == "u" || c[i] == "ú" || c[i] == "ü" || c[i] == "ù" || c[i] == "û"){
             if(c[i] == "U"){
                 b.value += "01010101 "
-            } else{
+            } else if(c[i] == "u"){
                 b.value += "01110101 "
+            } else if(c[i] == "ú"){
+                b.value += "11111010 "
+            } else if(c[i] == "ü"){
+                b.value += "11111100 "
+            } else if(c[i] == "ù"){
+                b.value += "11111001 "
+            } else{
+                b.value += "11111011 "
             }
         }
         if(c[i] == "V" || c[i] == "v"){
@@ -163,6 +221,156 @@ btn.addEventListener("click", function(e){
                 b.value += "01110110 "
             }
         }
+        if(c[i] == "W" || c[i] == "w"){
+            if(c[i] == "W"){
+                b.value = "01010111 "
+            } else{
+                b.value = "01110111 "
+            }
+        }
+        if(c[i] == "X" || c[i] == "x"){
+            if(c[i] == "X"){
+                b.value = "01011000 "
+            } else{
+                b.value = "01111000 "
+            }
+        }
+        if(c[i] == "Y" || c[i] == "y"){
+            if(c[i] == "Y"){
+                b.value = "01011001 "
+            } else{
+                b.value = "01111001 "
+            }
+        } if(c[i] == "Z" || c[i] == "z"){
+            if(c[i] == "Z"){
+                b.value == "01011010 "
+            } else{
+                b.value = "01111010 "
+            }
+        }
+        // letras especiais
+        if(c[i] == "ę" || c[i] == "ė" || c[i] == "ē" || c[i] == "į" || c[i] == "ī"  || c[i] == "ō" || c[i] == "œ" || c[i] == "ū" || c[i] == "ˆ" || c[i] == "˜" || c[i] == "?"){
+            if(c[i] == "ę" || c[i] == "ė" || c[i] == "ē" || c[i] == "į" || c[i] == "ī"  || c[i] == "ō" || c[i] == "œ" || c[i] == "ū" || c[i] == "ˆ" || c[i] == "˜" || c[i] == "?"){
+                b.value += "00111111 "
+            }
+        } // numeros
+        if(c[i] == "0"){
+            b.value += "00110000 "
+        }
+        if(c[i] == "1"){
+            b.value += "00110001 "
+        }
+        if(c[i] == "2"){
+            b.value += "00110010 "
+        }
+        if(c[i] == "3"){
+            b.value += "00110011 "
+        }
+        if(c[i] == "4"){
+            b.value += "00110100 "
+        }
+        if(c[i] == "5"){
+            b.value += "00110101 "
+        }
+        if(c[i] == "6"){
+            b.value += "00110110 "
+        }
+        if(c[i] == "7"){
+            b.value += "00110111 "
+        }
+        if(c[i] == "8"){
+            b.value += "00111000 "
+        }
+        if(c[i] == "9"){
+            b.value += "00111001 "
+        }
+        // especiais
+        if(c[i] == "!"){
+            b.value += "00100001 "
+        }
+        if(c[i] == "@"){
+            b.value += "01000000 "
+        }
+        if(c[i] == "#"){
+            b.value += "00100011 "
+        }
+        if(c[i] == "$"){
+            b.value += "00100100 "
+        }
+        if(c[i] == "%"){
+            b.value += "00100101 "
+        }
+        if(c[i] == "&"){
+            b.value += "00100110 "
+        }
+        if(c[i] == "*"){
+            b.value += "00101010 "
+        }
+        if(c[i] == "("){
+            b.value += "00101000 "
+        }
+        if(c[i] == ")"){
+            b.value += "00101001 "
+        }
+        if(c[i] == "`"){
+            b.value += "01100000 "
+        }
+        if(c[i] == "-"){
+            b.value += "00101101 "
+        }
+        if(c[i] == "_"){
+            b.value += "01011111 "
+        }
+        if(c[i] == "="){
+            b.value += "00111101 "
+        }
+        if(c[i] == "+"){
+            b.value += "00101011 "
+        }
+        if(c[i] == "{"){
+            b.value += "01111011 "
+        }
+        if(c[i] == "}"){
+            b.value += "01111101 "
+        }
+        if(c[i] == "["){
+            b.value += "01011011 "
+        }
+        if(c[i] == "]"){
+            b.value += "01011101 "
+        }
+        if(c[i] == "|"){
+            b.value += "01111100 "
+        }
+        if(c[i] == ";"){
+            b.value += "00111011 "
+        }
+        if(c[i] == ":"){
+            b.value += "00111010 "
+        }
+        if(c[i] == "'"){
+            b.value += "00100111 "
+        }
+        if(c[i] == '"'){
+            b.value += "00100010 "
+        }
+        if(c[i] == "<"){
+            b.value += "00111100 "
+        }
+        if(c[i] == ">"){
+            b.value += "00111110 "
+        }
+        if(c[i] == ","){
+            b.value += "00101100 "
+        }
+        if(c[i] == "."){
+            b.value += "00101110 "
+        }
+        if(c[i] == "/"){
+            b.value += "00101111 "
+        }
+        if(c[i] == " "){
+            b.value += "00100000 "
+        }
         a.value = ""
-
 }})
