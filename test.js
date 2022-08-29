@@ -6,6 +6,7 @@ btn.addEventListener("click", function(e){
     const a = document.getElementById("1");
     const b = document.getElementById("2");
     const c = a.value += [""]
+    b.value = ""
 
     for(let i = 0; i < c.length; i++){
         if(c[i] == "A" || c[i] == "a"){
