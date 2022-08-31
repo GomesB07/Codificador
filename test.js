@@ -1,4 +1,13 @@
 const btn = document.getElementById("send");
+const btn2 = document.getElementById("send-2")
+const sol = document.getElementById("i-1")
+const lua = document.getElementById("i-2")
+const ios = document.getElementById("switch-shadow")
+const fundo = document.getElementById("test")
+const fundoLo = document.getElementById("div-logo")
+const logo = document.getElementById("h1")
+const container = document.getElementById("container")
+const container2 = document.getElementById("container-2")
 
 btn.addEventListener("click", function(e){
     e.preventDefault();
@@ -374,3 +383,48 @@ btn.addEventListener("click", function(e){
         }
         a.value = ""
 }})
+
+
+
+// MODO ESCURO
+
+function check() {
+    if (document.getElementById("switch-shadow").checked == true || sol.style.color == "yellow" || lua.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF"){
+        sol.style.color = "transparent"
+        lua.style.color = "#32a6e4"
+        fundoLo.style.backgroundColor = "#202020"
+        fundo.style.backgroundColor = "#202020"
+        logo.style.color = "#32a6e4"
+        container.style.backgroundColor = "#202020"
+        container2.style.backgroundColor = "#202020"
+        btn.style.backgroundColor = "#32a6e4"
+        btn2.style.backgroundColor = "#32a6e4"
+        document.body.style.backgroundColor = "#202020";
+        } else{
+        sol.style.color = "#ff9d00"
+        lua.style.color = "transparent"
+        fundoLo.style.backgroundColor = "#FFFFFF"
+        fundo.style.backgroundColor = "#FFFFFF"
+        logo.style.color = "#000000"
+        container.style.backgroundColor = "#FFFFFF"
+        container2.style.backgroundColor = "#FFFFFF"
+        btn.style.backgroundColor = "#000000"
+        btn2.style.backgroundColor = "#000000"
+        document.body.style.backgroundColor = "#FFFFFF";
+}
+}
+ios.addEventListener("click", check)
+
+// EFEITO
+
+function typeWriter(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i)=>{
+        setTimeout(() => elemento.innerHTML += letra, 150 * i);
+    });
+}
+const titulo = document.querySelector('h1');
+typeWriter(titulo);
+
+

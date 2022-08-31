@@ -5,25 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/398ac84873.js" crossorigin="anonymous"></script>
     <script src="test.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <title>Codificação</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <h1>Codif00101</h1>
+        <div class="header">
+            <div class="logo" id="div-logo">
+                <h1 id="h1">Codif101011</h1>
+            </div>
+            <div id="test">
+                <i class="fa-solid fa-sun" id="i-1"></i>
+                <div class="switch__container">
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+                    <label for="switch-shadow"></label>
+                </div>
+                <i class="fa-solid fa-moon" id="i-2"></i>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <textarea style="resize: vertical" type="text" placeholder="Texto para Codificar" id="1" class="text-1"></textarea>
-        <textarea style="resize: vertical" type="text" id="2" class="text-2"></textarea>
-    </div>
-    <div class="container-2">
-        <input type="submit" id="send" value="Codificar" class="button">
-        <input type="submit" id="send-2" value="Decodificar" class="button-2">
-    </div>
+        <div class="container" id="container">
+            <textarea style="resize: vertical" type="text" placeholder="Texto para Codificar" id="1"
+                class="text-1"></textarea>
+            <textarea style="resize: vertical" type="text" placeholder="Texto Codificado" id="2"
+                class="text-2"></textarea>
+        </div>
+        <div class="container-2" id="container-2">
+            <input type="submit" id="send" value="Codificar" class="button">
+            <input type="submit" id="send-2" value="Decodificar" class="button-2">
+        </div>
 </body>
 
 </html>
