@@ -8,12 +8,12 @@ const fundoLo = document.getElementById("div-logo")
 const logo = document.getElementById("h1")
 const container = document.getElementById("container")
 const container2 = document.getElementById("container-2")
+const a = document.getElementById("1");
+const b = document.getElementById("2");
 
 btn.addEventListener("click", function(e){
     e.preventDefault();
 
-    const a = document.getElementById("1");
-    const b = document.getElementById("2");
     const c = a.value += [""]
     b.value = ""
 
@@ -389,7 +389,7 @@ btn.addEventListener("click", function(e){
 // MODO ESCURO
 
 function check() {
-    if (document.getElementById("switch-shadow").checked == true || sol.style.color == "yellow" || lua.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF"){
+    if (document.getElementById("switch-shadow").checked == true || sol.style.color == "yellow" || lua.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || a.style.backgroundColor == "#FFFFFF" || b.style.backgroundColor == "#FFFFFF"){
         sol.style.color = "transparent"
         lua.style.color = "#32a6e4"
         fundoLo.style.backgroundColor = "#202020"
@@ -400,7 +400,9 @@ function check() {
         btn.style.backgroundColor = "#32a6e4"
         btn2.style.backgroundColor = "#32a6e4"
         document.body.style.backgroundColor = "#202020";
-        } else{
+        a.style.backgroundColor = "#A2A2A2"
+        b.style.backgroundColor = "#A2A2A2"
+    } else{
         sol.style.color = "#ff9d00"
         lua.style.color = "transparent"
         fundoLo.style.backgroundColor = "#FFFFFF"
@@ -411,6 +413,8 @@ function check() {
         btn.style.backgroundColor = "#000000"
         btn2.style.backgroundColor = "#000000"
         document.body.style.backgroundColor = "#FFFFFF";
+        a.style.backgroundColor = "#FFFFFF"
+        b.style.backgroundColor = "#FFFFFF"
 }
 }
 ios.addEventListener("click", check)
