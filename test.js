@@ -8,15 +8,34 @@ const fundoLo = document.getElementById("div-logo")
 const logo = document.getElementById("h1")
 const container = document.getElementById("container")
 const container2 = document.getElementById("container-2")
-const a = document.getElementById("1");
+const test = document.getElementById("1");
 const b = document.getElementById("2");
+const link1 = document.getElementById("link-1")
+const link2 = document.getElementById("link-2")
+const navicon = document.getElementById("navicon")
+const divNavicon = document.getElementById("div-navicon")
+const span1 = document.getElementById("span1")
+const span2 = document.getElementById("span2")
+const span3 = document.getElementById("span3")
+
+
+
+const fundo2 = document.getElementById("test2")
+const link3 = document.getElementById("link-3")
+const link4 = document.getElementById("link-4")
+const sol2 = document.getElementById("i-3")
+const lua2 = document.getElementById("i-4")
+const ios2 = document.getElementById("switch-shadow3")
+const lista = document.getElementById("ul-test2")
+const containerIos = document.getElementById("switch__container2")
+
+
 
 btn.addEventListener("click", function(e){
     e.preventDefault();
 
-    const c = a.value += [""]
+    const c = test.value += [""]
     b.value = ""
-
     for(let i = 0; i < c.length; i++){
         if(c[i] == "A" || c[i] == "a" || c[i] == "á" || c[i] == "ã" || c[i] == "à" || c[i] == "â" || c[i] == "ª" || c[i] == "ä" || c[i] == "å" || c[i] == "æ"){
             if(c[[i]] == "A"){
@@ -293,7 +312,7 @@ btn.addEventListener("click", function(e){
         if(c[i] == "9"){
             b.value += "00111001 "
         }
-        // especiais
+        // ESPECIAIS
         if(c[i] == "!"){
             b.value += "00100001 "
         }
@@ -381,7 +400,7 @@ btn.addEventListener("click", function(e){
         if(c[i] == " "){
             b.value += "00100000 "
         }
-        a.value = ""
+        test.value = ""
 }})
 
 
@@ -389,7 +408,7 @@ btn.addEventListener("click", function(e){
 // MODO ESCURO
 
 function check() {
-    if (document.getElementById("switch-shadow").checked == true || sol.style.color == "yellow" || lua.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || a.style.backgroundColor == "#FFFFFF" || b.style.backgroundColor == "#FFFFFF"){
+    if (document.getElementById("switch-shadow").checked == true || sol.style.color == "yellow" || lua.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || test.style.backgroundColor == "#FFFFFF" || b.style.backgroundColor == "#FFFFFF" || link1.style.color == "#000000" || link2.style.color == "#000000" || divNavicon.style.backgroundColor == "#FFFFFF"){
         sol.style.color = "transparent"
         lua.style.color = "#32a6e4"
         fundoLo.style.backgroundColor = "#202020"
@@ -400,8 +419,11 @@ function check() {
         btn.style.backgroundColor = "#32a6e4"
         btn2.style.backgroundColor = "#32a6e4"
         document.body.style.backgroundColor = "#202020";
-        a.style.backgroundColor = "#A2A2A2"
+        test.style.backgroundColor = "#A2A2A2"
         b.style.backgroundColor = "#A2A2A2"
+        link1.style.color = "#32a6e4"
+        link2.style.color = "#32a6e4"
+        divNavicon.style.backgroundColor = "#202020"
     } else{
         sol.style.color = "#ff9d00"
         lua.style.color = "transparent"
@@ -413,11 +435,77 @@ function check() {
         btn.style.backgroundColor = "#000000"
         btn2.style.backgroundColor = "#000000"
         document.body.style.backgroundColor = "#FFFFFF";
-        a.style.backgroundColor = "#FFFFFF"
+        test.style.backgroundColor = "#FFFFFF"
         b.style.backgroundColor = "#FFFFFF"
+        link1.style.color = "#000000"
+        link2.style.color = "#000000"
+        divNavicon.style.backgroundColor = "#FFFFFF"
 }
 }
 ios.addEventListener("click", check)
+
+//MENU
+
+
+function check2() {
+    if (document.getElementById("switch-shadow3").checked == true || sol2.style.color == "yellow" || lua2.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo2.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || test.style.backgroundColor == "#FFFFFF" || b.style.backgroundColor == "#FFFFFF" || link3.style.color == "#000000" || link4.style.color == "#000000" || divNavicon.style.backgroundColor == "#FFFFFF" || span1.style.backgroundColor == "#000000" || span2.style.backgroundColor == "#000000" || span3.style.backgroundColor == "#000000"){
+        sol2.style.color = "transparent"
+        lua2.style.color = "#32a6e4"
+        fundoLo.style.backgroundColor = "#202020"
+        fundo2.style.backgroundColor = "#303030"
+        logo.style.color = "#32a6e4"
+        container.style.backgroundColor = "#202020"
+        container2.style.backgroundColor = "#202020"
+        btn.style.backgroundColor = "#32a6e4"
+        btn2.style.backgroundColor = "#32a6e4"
+        document.body.style.backgroundColor = "#202020";
+        test.style.backgroundColor = "#787878"
+        b.style.backgroundColor = "#787878"
+        link3.style.color = "#32a6e4"
+        link4.style.color = "#32a6e4"
+        divNavicon.style.backgroundColor = "#202020"
+        span1.style.backgroundColor = "#32a6e4"
+        span2.style.backgroundColor = "#32a6e4"
+        span3.style.backgroundColor = "#32a6e4"
+    } else{
+        sol2.style.color = "#ff9d00"
+        lua2.style.color = "transparent"
+        fundoLo.style.backgroundColor = "#FFFFFF"
+        fundo2.style.backgroundColor = "#FFFFFF"
+        logo.style.color = "#000000"
+        container.style.backgroundColor = "#FFFFFF"
+        container2.style.backgroundColor = "#FFFFFF"
+        btn.style.backgroundColor = "#000000"
+        btn2.style.backgroundColor = "#000000"
+        document.body.style.backgroundColor = "#FFFFFF";
+        test.style.backgroundColor = "#FFFFFF"
+        b.style.backgroundColor = "#FFFFFF"
+        link3.style.color = "#000000"
+        link4.style.color = "#000000"
+        divNavicon.style.backgroundColor = "#FFFFFF"
+        span1.style.backgroundColor = "#000000"
+        span2.style.backgroundColor = "#000000"
+        span3.style.backgroundColor = "#000000"
+}
+}
+ios2.addEventListener("click", check2)
+
+navicon.addEventListener("click", function(){
+    if(fundo2.style.maxHeight == "0px"){
+        fundo2.style.maxHeight = "100px"
+    } else{
+        fundo2.style.maxHeight = "0px"
+    }
+    
+    setTimeout(() => {if(fundo2.style.maxHeight == "100px" || lista.style.display == "none" || containerIos.style.display == "none"){
+        lista.style.display = "block"
+        containerIos.style.display = "flex"
+    } else{
+        lista.style.display = "none"
+        containerIos.style.display = "none"
+    }}, 450);
+})
+
 
 // EFEITO
 
@@ -430,5 +518,3 @@ function typeWriter(elemento){
 }
 const titulo = document.querySelector('h1');
 typeWriter(titulo);
-
-
