@@ -9,7 +9,7 @@ const logo = document.getElementById("h1")
 const container = document.getElementById("container")
 const container2 = document.getElementById("container-2")
 const test = document.getElementById("1");
-const b = document.getElementById("2");
+const b = document.getElementById("textarea2");
 const link1 = document.getElementById("link-1")
 const link2 = document.getElementById("link-2")
 const navicon = document.getElementById("navicon")
@@ -507,6 +507,9 @@ navicon.addEventListener("click", function(){
 })
 
 
+
+
+
 // EFEITO
 
 function typeWriter(elemento){
@@ -518,3 +521,28 @@ function typeWriter(elemento){
 }
 const titulo = document.querySelector('h1');
 typeWriter(titulo);
+
+// COPIAR ELEMENTO
+
+b.addEventListener("click", function(){
+    var copiado = b.value
+    navigator.clipboard.writeText(copiado);
+    console.log("test popup")
+
+    const popUp = document.getElementById("copiar")
+    const barra = document.getElementById("barra")
+
+    if(navigator.clipboard.writeText(copiado) == true || popUp.style.marginTop == "-100px" || barra.style.width == "0%"){
+        popUp.style.marginTop = "20px"
+        barra.style.width = "100%"
+    } else{
+        popUp.style.marginTop = "-100px"
+        barra.style.width = "0%"
+    }
+
+    setInterval(() => {
+        if(popUp.style.marginTop == "20px"){
+            popUp.style.marginTop = "-100px"
+        }
+    }, 2500);
+})

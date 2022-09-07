@@ -8,10 +8,19 @@
     <script src="https://kit.fontawesome.com/398ac84873.js" crossorigin="anonymous"></script>
     <script src="test.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
     <title>Codificação</title>
 </head>
 
 <body>
+    <div class="container-copiar">
+        <div class="copiar" id="copiar" style="margin-top: -100px;">
+            <p>Copiado!</p>
+            <div class="div-barra-progresso">
+                <div class="barra-progresso" id="barra" style="width: 0%;"></div>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <div class="logo" id="div-logo">
             <h1 id="h1">Codif101011</h1>
@@ -26,6 +35,7 @@
                 </label>
             </div>
         </div>
+
         <div id="test">
             <ul class="ul-test">
                 <li><a id="link-1" href="autores.html">Autores</a></li>
@@ -38,8 +48,10 @@
                 <i class="fa-solid fa-moon" id="i-2"></i>
             </div>
         </div>
+
     </div>
     <div class="linha"></div>
+
     <div id="test2" style="max-height: 0px; position: relative; float: right;">
         <ul id="ul-test2" style="display: none;">
             <li><a id="link-3" href="autores.html">Autores</a></li>
@@ -52,9 +64,10 @@
             <i class="fa-solid fa-moon" id="i-4"></i>
         </div>
     </div>
+
     <div class="container" id="container">
         <textarea style="resize: vertical" type="text" placeholder="Texto para Codificar" id="1" class="text-1"></textarea>
-        <textarea style="resize: vertical" type="text" placeholder="Texto Codificado" id="2" class="text-2"></textarea>
+        <textarea readonly style="resize: vertical" type="text" placeholder="Texto Codificado" id="textarea2" class="text-2"></textarea>
     </div>
     <div class="container-2" id="container-2">
         <input type="submit" id="send" value="Codificar" class="button">
