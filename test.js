@@ -524,7 +524,7 @@ typeWriter(titulo);
 
 // COPIAR ELEMENTO
 
-b.addEventListener("click", function(){
+const test5 = () => {
     var copiado = b.value
     navigator.clipboard.writeText(copiado);
     console.log("test popup")
@@ -545,4 +545,5 @@ b.addEventListener("click", function(){
             popUp.style.marginTop = "-100px"
         }
     }, 2500);
-})
+}
+b.addEventListener("click", test5)
