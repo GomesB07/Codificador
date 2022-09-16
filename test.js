@@ -171,14 +171,11 @@ const titulo = document.querySelector('h1');
 typeWriter(titulo);
 
 
-<<<<<<< HEAD
-const test5 = () => {
-    var copiado = b.value
-=======
+
 // COPIAR ELEMENTO
+
 text2.addEventListener("click", function(){
     var copiado = text2.value
->>>>>>> ba252ffdec1ffff636c3b633710c842267a7b1d7
     navigator.clipboard.writeText(copiado);
     console.log("test popup")
 
@@ -198,5 +195,4 @@ text2.addEventListener("click", function(){
             popUp.style.marginTop = "-100px"
         }
     }, 2500);
-}
-b.addEventListener("click", test5)
+})
