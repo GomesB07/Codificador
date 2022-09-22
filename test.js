@@ -2,7 +2,6 @@ const btn = document.getElementById("send");
 const btn2 = document.getElementById("send-2")
 const sol = document.getElementById("i-1")
 const lua = document.getElementById("i-2")
-const switch1 = document.getElementById("switch-shadow")
 const fundo = document.getElementById("test")
 const fundoLo = document.getElementById("div-logo")
 const logo = document.getElementById("h1")
@@ -56,88 +55,127 @@ btn.addEventListener("click", function(e){
 
 // MODO ESCURO
 
-function check() {
-    if (document.getElementById("switch-shadow").checked == true || sol.style.color == "yellow" || lua.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || text1.style.backgroundColor == "#FFFFFF" || text2.style.backgroundColor == "#FFFFFF" || link1.style.color == "#000000" || link2.style.color == "#000000" || divNavicon.style.backgroundColor == "#FFFFFF"){
-        sol.style.color = "transparent"
-        lua.style.color = "#32a6e4"
-        fundoLo.style.backgroundColor = "#202020"
-        fundo.style.backgroundColor = "#202020"
-        logo.style.color = "#32a6e4"
-        container.style.backgroundColor = "#202020"
-        container2.style.backgroundColor = "#202020"
-        btn.style.backgroundColor = "#32a6e4"
-        btn2.style.backgroundColor = "#32a6e4"
-        document.body.style.backgroundColor = "#202020";
-        text1.style.backgroundColor = "#A2A2A2"
-        text2.style.backgroundColor = "#A2A2A2"
-        link1.style.color = "#32a6e4"
-        link2.style.color = "#32a6e4"
-        divNavicon.style.backgroundColor = "#202020"
-    } else{
-        sol.style.color = "#ff9d00"
-        lua.style.color = "transparent"
-        fundoLo.style.backgroundColor = "#FFFFFF"
-        fundo.style.backgroundColor = "#FFFFFF"
-        logo.style.color = "#000000"
-        container.style.backgroundColor = "#FFFFFF"
-        container2.style.backgroundColor = "#FFFFFF"
-        btn.style.backgroundColor = "#000000"
-        btn2.style.backgroundColor = "#000000"
-        document.body.style.backgroundColor = "#FFFFFF";
-        text1.style.backgroundColor = "#FFFFFF"
-        text2.style.backgroundColor = "#FFFFFF"
-        link1.style.color = "#000000"
-        link2.style.color = "#000000"
-        divNavicon.style.backgroundColor = "#FFFFFF"
-}
-}
-switch1.addEventListener("click", check)
+// function check() {
+//     if (document.getElementById("switch-shadow").checked == true || sol.style.color == "yellow" || lua.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || text1.style.backgroundColor == "#FFFFFF" || text2.style.backgroundColor == "#FFFFFF" || link1.style.color == "#000000" || link2.style.color == "#000000" || divNavicon.style.backgroundColor == "#FFFFFF"){
+//         sol.style.color = "transparent"
+//         lua.style.color = "#32a6e4"
+//         fundoLo.style.backgroundColor = "#202020"
+//         fundo.style.backgroundColor = "#202020"
+//         logo.style.color = "#32a6e4"
+//         container.style.backgroundColor = "#202020"
+//         container2.style.backgroundColor = "#202020"
+//         btn.style.backgroundColor = "#32a6e4"
+//         btn2.style.backgroundColor = "#32a6e4"
+//         document.body.style.backgroundColor = "#202020";
+//         text1.style.backgroundColor = "#A2A2A2"
+//         text2.style.backgroundColor = "#A2A2A2"
+//         link1.style.color = "#32a6e4"
+//         link2.style.color = "#32a6e4"
+//         divNavicon.style.backgroundColor = "#202020"
+//     } else{
+//         sol.style.color = "#ff9d00"
+//         lua.style.color = "transparent"
+//         fundoLo.style.backgroundColor = "#FFFFFF"
+//         fundo.style.backgroundColor = "#FFFFFF"
+//         logo.style.color = "#000000"
+//         container.style.backgroundColor = "#FFFFFF"
+//         container2.style.backgroundColor = "#FFFFFF"
+//         btn.style.backgroundColor = "#000000"
+//         btn2.style.backgroundColor = "#000000"
+//         document.body.style.backgroundColor = "#FFFFFF";
+//         text1.style.backgroundColor = "#FFFFFF"
+//         text2.style.backgroundColor = "#FFFFFF"
+//         link1.style.color = "#000000"
+//         link2.style.color = "#000000"
+//         divNavicon.style.backgroundColor = "#FFFFFF"
+// }
+// }
+// switch1.addEventListener("click", check)
 
-//MENU
+// //MENU
 
 
-function check2() {
-    if (document.getElementById("switch-shadow3").checked == true || sol2.style.color == "yellow" || lua2.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo2.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || text1.style.backgroundColor == "#FFFFFF" || text2.style.backgroundColor == "#FFFFFF" || link3.style.color == "#000000" || link4.style.color == "#000000" || divNavicon.style.backgroundColor == "#FFFFFF" || span1.style.backgroundColor == "#000000" || span2.style.backgroundColor == "#000000" || span3.style.backgroundColor == "#000000"){
-        sol2.style.color = "transparent"
-        lua2.style.color = "#32a6e4"
-        fundoLo.style.backgroundColor = "#202020"
-        fundo2.style.backgroundColor = "#303030"
-        logo.style.color = "#32a6e4"
-        container.style.backgroundColor = "#202020"
-        container2.style.backgroundColor = "#202020"
-        btn.style.backgroundColor = "#32a6e4"
-        btn2.style.backgroundColor = "#32a6e4"
-        document.body.style.backgroundColor = "#202020";
-        text1.style.backgroundColor = "#787878"
-        text2.style.backgroundColor = "#787878"
-        link3.style.color = "#32a6e4"
-        link4.style.color = "#32a6e4"
-        divNavicon.style.backgroundColor = "#202020"
-        span1.style.backgroundColor = "#32a6e4"
-        span2.style.backgroundColor = "#32a6e4"
-        span3.style.backgroundColor = "#32a6e4"
-    } else{
-        sol2.style.color = "#ff9d00"
-        lua2.style.color = "transparent"
-        fundoLo.style.backgroundColor = "#FFFFFF"
-        fundo2.style.backgroundColor = "#FFFFFF"
-        logo.style.color = "#000000"
-        container.style.backgroundColor = "#FFFFFF"
-        container2.style.backgroundColor = "#FFFFFF"
-        btn.style.backgroundColor = "#000000"
-        btn2.style.backgroundColor = "#000000"
-        document.body.style.backgroundColor = "#FFFFFF";
-        text1.style.backgroundColor = "#FFFFFF"
-        text2.style.backgroundColor = "#FFFFFF"
-        link3.style.color = "#000000"
-        link4.style.color = "#000000"
-        divNavicon.style.backgroundColor = "#FFFFFF"
-        span1.style.backgroundColor = "#000000"
-        span2.style.backgroundColor = "#000000"
-        span3.style.backgroundColor = "#000000"
-}
-}
-switch2.addEventListener("click", check2)
+// function check2() {
+//     if (document.getElementById("switch-shadow3").checked == true || sol2.style.color == "yellow" || lua2.style.color == "transparent" || fundoLo.style.backgroundColor == "#FFFFFF" || fundo2.style.backgroundColor == "#FFFFFF" || logo.style.color == "#000000" || container.style.backgroundColor == "#FFFFFF" || container2.style.backgroundColor == "#FFFFFF" || btn.style.backgroundColor == "#000000" || btn2.style.backgroundColor == "#000000" || document.body.style.backgroundColor == "#FFFFFF" || text1.style.backgroundColor == "#FFFFFF" || text2.style.backgroundColor == "#FFFFFF" || link3.style.color == "#000000" || link4.style.color == "#000000" || divNavicon.style.backgroundColor == "#FFFFFF" || span1.style.backgroundColor == "#000000" || span2.style.backgroundColor == "#000000" || span3.style.backgroundColor == "#000000"){
+//         sol2.style.color = "transparent"
+//         lua2.style.color = "#32a6e4"
+//         fundoLo.style.backgroundColor = "#202020"
+//         fundo2.style.backgroundColor = "#303030"
+//         logo.style.color = "#32a6e4"
+//         container.style.backgroundColor = "#202020"
+//         container2.style.backgroundColor = "#202020"
+//         btn.style.backgroundColor = "#32a6e4"
+//         btn2.style.backgroundColor = "#32a6e4"
+//         document.body.style.backgroundColor = "#202020";
+//         text1.style.backgroundColor = "#787878"
+//         text2.style.backgroundColor = "#787878"
+//         link3.style.color = "#32a6e4"
+//         link4.style.color = "#32a6e4"
+//         divNavicon.style.backgroundColor = "#202020"
+//         span1.style.backgroundColor = "#32a6e4"
+//         span2.style.backgroundColor = "#32a6e4"
+//         span3.style.backgroundColor = "#32a6e4"
+//     } else{
+//         sol2.style.color = "#ff9d00"
+//         lua2.style.color = "transparent"
+//         fundoLo.style.backgroundColor = "#FFFFFF"
+//         fundo2.style.backgroundColor = "#FFFFFF"
+//         logo.style.color = "#000000"
+//         container.style.backgroundColor = "#FFFFFF"
+//         container2.style.backgroundColor = "#FFFFFF"
+//         btn.style.backgroundColor = "#000000"
+//         btn2.style.backgroundColor = "#000000"
+//         document.body.style.backgroundColor = "#FFFFFF";
+//         text1.style.backgroundColor = "#FFFFFF"
+//         text2.style.backgroundColor = "#FFFFFF"
+//         link3.style.color = "#000000"
+//         link4.style.color = "#000000"
+//         divNavicon.style.backgroundColor = "#FFFFFF"
+//         span1.style.backgroundColor = "#000000"
+//         span2.style.backgroundColor = "#000000"
+//         span3.style.backgroundColor = "#000000"
+// }
+// }
+// switch2.addEventListener("click", check2)
+
+
+// DARK MODE
+
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeStorage = localStorage.getItem('dark-mode')
+    const html = document.querySelector('html')
+    const inputDarkMode = document.getElementById('switch-shadow')
+    const inputDarkMode2 = document.getElementById('switch-shadow3')
+
+    if(darkModeStorage){
+        html.setAttribute("dark", "true")
+        btn.setAttribute("dark", "true")
+    }
+
+    inputDarkMode.addEventListener('change', () => {
+        if(inputDarkMode.checked){
+            html.setAttribute("dark", "true")
+            btn.setAttribute("dark", "true")
+            localStorage.setItem('dark-mode', true)
+        }else{
+            html.removeAttribute("dark")
+            btn.setAttribute("dark", "true")
+            localStorage.removeItem('dark-mode')
+        }
+   })
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 navicon.addEventListener("click", function(){
     if(fundo2.style.maxHeight == "0px"){
@@ -196,3 +234,22 @@ text2.addEventListener("click", function(){
         }
     }, 2500);
 })
+
+function openPage(x, y){
+    var indice = x
+    var target = y
+    var url = './../Link-Pag/autores' + indice + '.html'
+
+    var xml = new XMLHttpRequest()
+
+    xml.onreadystatechange = function(){
+        if(xml.readyState == 4 && xml.status == 200){
+            document.getElementById(target).innerHTML = xml.responseText
+        }
+    }
+
+    xml.open("GET", url, true)
+
+    xml.send()
+
+}
