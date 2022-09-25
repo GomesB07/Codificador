@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="body-color">
+    <meta name="msapplication-navbutton-color" content="body-color">
+    <meta name="theme-color" content="body-color" id="meta">
     <script src="https://kit.fontawesome.com/398ac84873.js" crossorigin="anonymous"></script>
     <script src="test.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content= "width=device-width, user-scalable=no">
     <title>Codificação</title>
 </head>
 
@@ -21,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="header">
+    <div class="header" id="header">
         <div class="logo" id="div-logo">
             <h1 id="h1">Codif101011</h1>
         </div>
@@ -36,12 +39,12 @@
             </div>
         </div>
 
-        <div id="test">
-            <ul class="ul-test">
+        <div id="test" style="max-height: 0%;">
+            <ul class="ul-test" id="ul-test">
                 <li><a id="link-1" href="autores.html">Autores</a></li>
                 <li><a id="link-2" href="">Informações</a></li>
             </ul>
-            <div class="switch__container">
+            <div class="switch__container" id="switch_container">
                 <i class="fa-solid fa-sun" id="i-1"></i>
                 <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
                 <label for="switch-shadow"></label>
@@ -51,19 +54,6 @@
 
     </div>
     <div class="linha"></div>
-
-    <div id="test2" style="max-height: 0px; position: relative; float: right;">
-        <ul id="ul-test2" style="display: none;">
-            <li><a id="link-3" href="autores.html">Autores</a></li>
-            <li><a id="link-4" href="">Informações</a></li>
-        </ul>
-        <div id="switch__container2" style="display: none; margin-bottom: 5px;">
-            <i class="fa-solid fa-sun" id="i-3"></i>
-            <input id="switch-shadow3" class="switch switch--shadow" type="checkbox" />
-            <label for="switch-shadow3"></label>
-            <i class="fa-solid fa-moon" id="i-4"></i>
-        </div>
-    </div>
 
     <div class="container" id="container">
         <textarea style="resize: vertical" type="text" placeholder="Texto para Codificar" id="text-1" class="text-1"></textarea>
