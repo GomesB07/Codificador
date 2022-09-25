@@ -6,13 +6,10 @@ const switch1 = document.getElementById("switch-shadow")
 const fundo = document.getElementById("test")
 const fundoLo = document.getElementById("div-logo")
 const h1Logo = document.getElementById("h1")
-
 const container = document.getElementById("container")
 const container2 = document.getElementById("container-2")
-
 const link1 = document.getElementById("link-1")
 const link2 = document.getElementById("link-2")
-
 const navicon = document.getElementById("navicon")
 const divNavicon = document.getElementById("div-navicon")
 const span1 = document.getElementById("span1")
@@ -23,20 +20,15 @@ const link4 = document.getElementById("link-4")
 const sol2 = document.getElementById("i-3")
 const lua2 = document.getElementById("i-4")
 const switch2 = document.getElementById("switch-shadow3")
-
 const popUp = document.getElementById("copiar")
 const barra = document.getElementById("barra")
-
-
-
 const lista = document.getElementById("ul-test")
-
-
-
 const containerSwitch = document.getElementById("switch_container")
-
 const text1 = document.getElementById("text-1");
 const text2 = document.getElementById("text-2");
+
+
+
 btn.addEventListener("click", function(e){
     e.preventDefault;
 
@@ -92,6 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector("body")
     const header = document.getElementById("header")
     const autoresTe = document.getElementById("autores-test")
+    const h1Autores = document.getElementById("h1-autores")
+    const alunos = document.getElementsByClassName("alunos")
+    const nomeAutor = document.getElementsByClassName("nome-autor")
+    const pAluno = document.getElementsByClassName("p-aluno")
 
 
     if(darkModeStorage){
@@ -112,6 +108,13 @@ document.addEventListener('DOMContentLoaded', () => {
         btn2.setAttribute("dark", "true")
         popUp.setAttribute("dark", "true")
         autoresTe.setAttribute("dark", "true")
+        h1Autores.setAttribute("dark", "true")
+        autoresClose.setAttribute("dark", "true")
+        for(let i = 0; i < alunos.length && i < nomeAutor.length && i < pAluno.length; i++){
+            alunos[i].setAttribute("dark", "true")
+            nomeAutor[i].setAttribute("dark", "true")
+            pAluno[i].setAttribute("dark", "true")
+        }
 
 
         switch1.checked = true
@@ -136,6 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
             btn2.setAttribute("dark", "true")
             popUp.setAttribute("dark", "true")
             autoresTe.setAttribute("dark", "true")
+            h1Autores.setAttribute("dark", "true")
+            autoresClose.setAttribute("dark", "true")
+            for(let i = 0; i < alunos.length && i < nomeAutor.length && i < pAluno.length; i++){
+                alunos[i].setAttribute("dark", "true")
+                nomeAutor.setAttribute("dark", "true")
+                pAluno[i].setAttribute("dark", "true")
+            }
 
             localStorage.setItem('dark-mode', true)
         }else{
@@ -156,6 +166,14 @@ document.addEventListener('DOMContentLoaded', () => {
             btn2.removeAttribute("dark")
             popUp.removeAttribute("dark")
             autoresTe.removeAttribute("dark")
+            h1Autores.removeAttribute("dark")
+            autoresClose.removeAttribute("dark")
+            for(let i = 0; i < alunos.length && i < nomeAutor.length && i < pAluno.length; i++){
+                alunos[i].removeAttribute("dark")
+                nomeAutor[i].removeAttribute("dark")
+                pAluno[i].removeAttribute("dark")
+            }
+
 
             localStorage.removeItem('dark-mode')
             

@@ -12,7 +12,11 @@ body, html{
     width: 100%;
     height: 100%;
 }
-
+#global{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
 .header {
     width: 100%;
     height: 15vh;
@@ -46,9 +50,18 @@ h1::after {
 .div-navicon {
     display: none;
 }
+.linha {
+    width: 90%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #6d6d6d;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
 
 .container {
-    height: 90%;
+    /* height: 90%; */
     width: 100%;
     display: flex;
     background-color: transparent;
@@ -111,8 +124,6 @@ textarea::-webkit-input-placeholder {
 .button:active, .button-2:active{
     background-color: #484848;
 }
-
-/* MODO ESCURO */
 #test {
     width: 50%;
     height: 100%;
@@ -210,17 +221,174 @@ textarea::-webkit-input-placeholder {
     transform: translateX(20px);
 }
 
-@keyframes pisca {
 
-    0%,
-    100% {
-        opacity: 1;
-    }
 
-    50% {
-        opacity: 0;
-    }
+/* AUTORES */
+.autores-test{
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    flex-direction: column;
+    animation: autores 1s ease-in-out alternate;
 }
+.header-autores{
+    width: 100%;
+    height: 15vh;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+}
+.div-h1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.h1-autores{
+    font-size: clamp(20px, 3vw, 3.5vw);
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 25px;
+}
+.div-arrow{
+    display: none;
+}
+
+
+.linha2{
+    width: 90%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #6d6d6d;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.container-alunos{
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alunos{
+    background-color: #acacac;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #363636;
+    border-width: medium;
+}
+.informacoes{
+    height: 100%;
+    width: clamp(150px, 35%, 50%);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    /* background-color: blue; */
+}
+.nome-autor{
+    font-size: clamp(2vw, 18px, 25px);
+    color: #000000;
+}
+.sala{
+    /* background-color: green; */
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-aluno{
+    font-size: clamp(1.2vw, 15px, 30px);
+    font-weight: 700;
+    color: #000000;
+}
+.foto{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    /* background-color: red; */
+}
+.img-autores{
+    background-color: #909090;
+    width: clamp(50px, 80px, 10vw);
+    height: clamp(50px, 80px, 10vw);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-autores i{
+    font-size: clamp(30px, 50px, 3vw);
+}
+img{
+    border-radius: 100%;
+}
+
+
+
+/* FUNÇÃO COPIAR */
+.container-copiar {
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.copiar {
+    width: 150px;
+    height: 100px;
+    background-color: #FFFFFF;
+    position: absolute;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #6d6d6d;
+    border-radius: 5px;
+    transition: 2s;
+    transition-delay: 0.5s;
+    z-index: 100;
+}
+
+.copiar p {
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.div-barra-progresso {
+    width: 80%;
+    height: 10px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #858585;
+    border-radius: 10px;
+}
+
+.barra-progresso {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+    transition: 1.2s;
+    transition-delay: 0.8s;
+}
+
+
+
+/* MEDIAS E KEYFRAMES */
 
 @media(max-width: 700px) {
     .header {
@@ -379,7 +547,7 @@ textarea::-webkit-input-placeholder {
     }
     .container{
         /* margin-top: 40px; */
-        height: 67%;
+        /* height: 67%; */
         transition-duration: 1.2s;
         transition-delay: 0.3s;
     }
@@ -395,6 +563,31 @@ textarea::-webkit-input-placeholder {
         height: 32px;
         margin: 10px auto 0 auto;
     }
+
+
+    /* AUTORES */
+
+    .header-autores{
+        height: 12vh;
+    }
+    .div-h1{
+        width: 80%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .div-arrow{
+        width: 20%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 25px;
+        align-items: center;
+    }
+    #autores-close{
+        font-size: 30px;
+        font-weight: 700;
+    }
 }
 @media(max-width: 600px){
     .text-1, .text-2{
@@ -409,77 +602,11 @@ textarea::-webkit-input-placeholder {
         width: 90%;
     }
 }
-
-@keyframes aoba {
-    from {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0px);
-        opacity: 1;
+@media(max-width: 380px){
+    .nome-autor{
+        font-size: 15px;
     }
 }
-
-.linha {
-    width: 90%;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #6d6d6d;
-    display: block;
-    margin: 0 auto 0 auto;
-}
-
-.container-copiar {
-    width: 100%;
-    height: 10px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
-
-.copiar {
-    width: 150px;
-    height: 100px;
-    background-color: #FFFFFF;
-    position: absolute;
-    margin-top: -100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid #6d6d6d;
-    border-radius: 5px;
-    transition: 2s;
-    transition-delay: 0.5s;
-    z-index: 100;
-}
-
-.copiar p {
-    display: block;
-    margin: 0 auto 5px auto;
-}
-
-.div-barra-progresso {
-    width: 80%;
-    height: 10px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid #858585;
-    border-radius: 10px;
-}
-
-.barra-progresso {
-    width: 0%;
-    height: 100%;
-    background-color: green;
-    border-radius: 10px;
-    transition: 1.2s;
-    transition-delay: 0.8s;
-}
-
 @keyframes copiado {
     0% {
         transform: translateY(-100px);
@@ -511,6 +638,43 @@ textarea::-webkit-input-placeholder {
         transform: translateY(80px);
     }
 }
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes aoba {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes autores{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* FUNÇÃO MENU */
 #ul-test[bru] {
     width: 100%;
     height: 60%;
@@ -532,8 +696,9 @@ textarea::-webkit-input-placeholder {
     transition-duration: 0.9s;
 }
 
-/* MODO DARK COLORS */
 
+
+/* MODO DARK */
 html[dark], body[dark], #header[dark]{
     background-color: #000000;
 }
@@ -556,142 +721,25 @@ html[dark], body[dark], #header[dark]{
     background-color: #000000;
     color: #FFFFFF;
 }
-#global{
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-}
 
 /* AUTORES */
 #autores-test[dark]{
     background-color: #000000;
 }
-.autores-test{
-    width: 100%;
-    height: 100vh;
-    /* background-color: blue; */
-    z-index: 100;
-    position: absolute;
-    flex-direction: column;
+#h1-autores[dark]{
+    color: #FFFFFF;
 }
-.header-autores{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    /* background-color: #FFFFFF; */
-    /* background-color: red; */
+#autores-close[dark]{
+    color: #FFFFFF;
 }
-.div-h1{
-    width: 85%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-    /* background-color: green; */
+.alunos[dark]{
+    background-color: #363636;
+    border: 1px solid #a7a6a6;
+    border-width: medium;
 }
-.h1-autores{
-    font-size: clamp(20px, 3vw, 3.5vw);
-    color: #000000;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 25px;
+.nome-autor[dark]{
+    color: #a7a6a6;
 }
-.div-arrow{
-    width: 15%;
-    height: 100%;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-}
-.div-arrow i{
-    font-size: 45px;
-    z-index: 50px;
-}
-#autores-close{
-    width: 45px;
-    height: 100%;
-    background-color: red;
-}
-
-.linha {
-    width: 90%;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #6d6d6d;
-    display: block;
-    margin: 0 auto 0 auto;
-}
-
-.container-alunos{
-    /* background-color: blue; */
-    width: 100%;
-    height: 100vh;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.alunos{
-    background-color: rgb(188, 188, 188);
-    width: 80%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-.informacoes{
-    height: 100%;
-    width: clamp(150px, 35%, 50%);
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    /* background-color: blue; */
-}
-.nome-autor{
-    font-size: clamp(2vw, 18px, 25px);
-}
-.sala{
-    /* background-color: green; */
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-p{
-    font-size: clamp(1.2vw, 15px, 30px);
-    font-weight: 700;
-}
-.foto{
-    height: 100%;
-    width: 35%;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    /* background-color: red; */
-}
-.img-autores{
-    background-color: green;
-    width: clamp(50px, 80px, 10vw);
-    height: clamp(50px, 80px, 10vw);
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.img-autores i{
-    font-size: clamp(30px, 50px, 3vw);
-}
-img{
-    border-radius: 100%;
-}
-@media(max-width: 380px){
-    .nome-autor{
-        font-size: 15px;
-    }
+.p-aluno[dark]{
+    color: #a7a6a6;
 }
