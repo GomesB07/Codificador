@@ -62,20 +62,36 @@ btn.addEventListener("click", function(e){
 }})
 
 
+const autoresClose = document.getElementById("autores-close")
+const global = document.getElementById("global")
+const autoresTe = document.getElementById("autores-test")
 
-const meta = document.getElementById("meta")
+link1.addEventListener("click", function(){
+    if(global.style.display == "flex" && autoresTe.style.display == "none"){
+        global.style.display = "none"
+        autoresTe.style.display = "flex"
+    }
+})
+
+autoresClose.addEventListener("click", function(){
+    if(autoresTe.style.display == "flex" && global.style.display == "none"){
+        autoresTe.style.display = "none"
+        global.style.display = "flex"
+    }
+})
+
+
+
+
+
 // MODO ESCURO
-
-// function check() {
-    
-// }
-// switch1.addEventListener("click", check)
 
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeStorage = localStorage.getItem('dark-mode')
     const html = document.querySelector("html")
     const body = document.querySelector("body")
     const header = document.getElementById("header")
+    const autoresTe = document.getElementById("autores-test")
 
 
     if(darkModeStorage){
@@ -95,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.setAttribute("dark", "true")
         btn2.setAttribute("dark", "true")
         popUp.setAttribute("dark", "true")
+        autoresTe.setAttribute("dark", "true")
 
 
         switch1.checked = true
@@ -117,7 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
             text2.setAttribute("dark", "true")
             btn.setAttribute("dark", "true")
             btn2.setAttribute("dark", "true")
-            popUp.setAttribute("dark", "true")            
+            popUp.setAttribute("dark", "true")
+            autoresTe.setAttribute("dark", "true")
 
             localStorage.setItem('dark-mode', true)
         }else{
@@ -137,12 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.removeAttribute("dark")
             btn2.removeAttribute("dark")
             popUp.removeAttribute("dark")
+            autoresTe.removeAttribute("dark")
 
             localStorage.removeItem('dark-mode')
             
         }
    })
 })
+
 
 
 
@@ -154,6 +174,7 @@ window.addEventListener("resize", function() {
       fundo.removeAttribute("bru3")
     }
   })
+
 
 navicon.addEventListener("click", function(){
 

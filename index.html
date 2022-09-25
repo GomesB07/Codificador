@@ -5,64 +5,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="apple-mobile-web-app-status-bar-style" content="body-color">
     <meta name="msapplication-navbutton-color" content="body-color">
     <meta name="theme-color" content="body-color" id="meta">
     <script src="https://kit.fontawesome.com/398ac84873.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="test.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <title>Codificação</title>
 </head>
 
 <body>
-    <div class="container-copiar">
-        <div class="copiar" id="copiar" style="margin-top: -100px;">
-            <p>Copiado!</p>
-            <div class="div-barra-progresso">
-                <div class="barra-progresso" id="barra" style="width: 0%;"></div>
+    <div id="global" style="display: flex;">
+        <div class="container-copiar">
+            <div class="copiar" id="copiar" style="margin-top: -100px;">
+                <p>Copiado!</p>
+                <div class="div-barra-progresso">
+                    <div class="barra-progresso" id="barra" style="width: 0%;"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="header" id="header">
-        <div class="logo" id="div-logo">
-            <h1 id="h1">Codif101011</h1>
+        <div class="header" id="header">
+            <div class="logo" id="div-logo">
+                <h1 id="h1">Codif101011</h1>
+            </div>
+            <div class="div-navicon" id="div-navicon">
+                <input type="checkbox" id="navicon">
+                <div class="nav-toggle">
+                    <label for="navicon" class="hamburger">
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="test" style="max-height: 0%;">
+                <ul class="ul-test" id="ul-test">
+                    <li><a id="link-1">Autores</a></li>
+                    <li><a id="link-2" href="">Informações</a></li>
+                </ul>
+                <div class="switch__container" id="switch_container">
+                    <i class="fa-solid fa-sun" id="i-1"></i>
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+                    <label for="switch-shadow"></label>
+                    <i class="fa-solid fa-moon" id="i-2"></i>
+                </div>
+            </div>
+
         </div>
-        <div class="div-navicon" id="div-navicon">
-            <input type="checkbox" id="navicon">
-            <div class="nav-toggle">
-                <label for="navicon" class="hamburger">
-                    <span id="span1"></span>
-                    <span id="span2"></span>
-                    <span id="span3"></span>
-                </label>
+        <div class="linha"></div>
+
+        <div class="container" id="container">
+            <textarea style="resize: vertical" type="text" placeholder="Texto para Codificar" id="text-1"
+                class="text-1"></textarea>
+            <textarea readonly style="resize: vertical" type="text" placeholder="Texto Codificado" id="text-2"
+                class="text-2"></textarea>
+        </div>
+        <div class="container-2" id="container-2">
+            <input type="submit" id="send" value="Codificar" class="button">
+            <input type="submit" id="send-2" value="Decodificar" class="button-2">
+        </div>
+    </div>
+
+
+
+    <!-- AUTORES -->
+
+
+
+    <div class="autores-test" id="autores-test" style="display: none;">
+        <header class="header-autores" id="header-autores">
+            <div class="div-h1">
+                <h1 class="h1-autores">Autores</h1> 
+            </div>
+            <div class="div-arrow">
+                <!-- <i class="fa-solid fa-arrow-right-to-line"></i> -->
+                <a  id="autores-close"><i class="large material-icons">close</i></a>
+            </div>
+        </header>
+        <div class="linha"></div>
+        <div class="container-alunos">
+            <div class="alunos">
+                <div class="foto">
+                    <a class="img-autores"><img src="#" alt=""><i class="fa-solid fa-user"></i></img></a>
+                </div>
+                <div class="informacoes">
+                    <h2 class="nome-autor">Bruno Luis</h2>
+                </div>
+                <div class="sala">
+                        <p>3<sup>o</sup>A</p>
+                    </div>
+            </div>
+            <div class="alunos">
+                <div class="foto">
+                    <a class="img-autores"><img src="" alt=""><i class="fa-solid fa-user"></i></img></a>
+                </div>
+                <div class="informacoes">
+                    <h2 class="nome-autor">Igor Oliveira</h2>
+                </div>
+                <div class="sala">
+                        <p>3<sup>o</sup>A</p>
+                    </div>
+            </div>
+            <div class="alunos">
+                <div class="foto">
+                    <a class="img-autores"><img src="" alt=""><i class="fa-solid fa-user"></i></img></a>
+                </div>
+                <div class="informacoes">
+                    <h2 class="nome-autor">Leticia de Jesus</h2>
+                </div>
+                <div class="sala">
+                        <p>3<sup>o</sup>A</p>
+                    </div>
+            </div>
+            <div class="alunos">
+                <div class="foto">
+                    <a class="img-autores"><img src="" alt=""><i class="fa-solid fa-user"></i></img></a>
+                </div>
+                <div class="informacoes">
+                    <h2 class="nome-autor">Nathalia Nogueira</h2>
+                </div>
+                <div class="sala">
+                        <p>3<sup>o</sup>A</p>
+                    </div>
+            </div>
+            <div class="alunos">
+                <div class="foto">
+                 <a class="img-autores"><img src="" alt=""><i class="fa-solid fa-user"></i></img></a>
+                </div>
+                <div class="informacoes">
+                    <h2 class="nome-autor">Mayara Santos</h2>
+                </div>
+                <div class="sala">
+                        <p>3<sup>o</sup>A</p>
+                    </div>
+            </div>
+            <div class="alunos">
+                <div class="foto">
+                    <a class="img-autores"><img src="" alt=""><i class="fa-solid fa-user"></i></img></a>
+                </div>
+                <div class="informacoes">
+                    <h2 class="nome-autor">João Victor</h2>
+                </div>
+                <div class="sala">
+                        <p>3<sup>o</sup>A</p>
+                    </div>
             </div>
         </div>
-
-        <div id="test" style="max-height: 0%;">
-            <ul class="ul-test" id="ul-test">
-                <li><a id="link-1" href="autores.html">Autores</a></li>
-                <li><a id="link-2" href="">Informações</a></li>
-            </ul>
-            <div class="switch__container" id="switch_container">
-                <i class="fa-solid fa-sun" id="i-1"></i>
-                <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
-                <label for="switch-shadow"></label>
-                <i class="fa-solid fa-moon" id="i-2"></i>
-            </div>
-        </div>
-
-    </div>
-    <div class="linha"></div>
-
-    <div class="container" id="container">
-        <textarea style="resize: vertical" type="text" placeholder="Texto para Codificar" id="text-1" class="text-1"></textarea>
-        <textarea readonly style="resize: vertical" type="text" placeholder="Texto Codificado" id="text-2" class="text-2"></textarea>
-    </div>
-    <div class="container-2" id="container-2">
-        <input type="submit" id="send" value="Codificar" class="button">
-        <input type="submit" id="send-2" value="Decodificar" class="button-2">
-    </div>
+    </div>  
 </body>
 
 </html>
