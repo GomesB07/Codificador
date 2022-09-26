@@ -115,8 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
             nomeAutor[i].setAttribute("dark", "true")
             pAluno[i].setAttribute("dark", "true")
         }
-
-
         switch1.checked = true
     }
 
@@ -141,12 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
             autoresTe.setAttribute("dark", "true")
             h1Autores.setAttribute("dark", "true")
             autoresClose.setAttribute("dark", "true")
-            for(let i = 0; i < alunos.length && i < nomeAutor.length && i < pAluno.length; i++){
-                alunos[i].setAttribute("dark", "true")
-                nomeAutor.setAttribute("dark", "true")
-                pAluno[i].setAttribute("dark", "true")
-            }
-
+            // for(let i = 0; i < alunos.length && i < nomeAutor.length && i < pAluno.length; i++){
+            //     alunos[i].setAttribute("dark", "true")
+            //     nomeAutor.setAttribute("dark", "true")
+            //     pAluno[i].setAttribute("dark", "true")
+            // }
             localStorage.setItem('dark-mode', true)
         }else{
             lua.style.color = "transparent"
@@ -168,15 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
             autoresTe.removeAttribute("dark")
             h1Autores.removeAttribute("dark")
             autoresClose.removeAttribute("dark")
-            for(let i = 0; i < alunos.length && i < nomeAutor.length && i < pAluno.length; i++){
-                alunos[i].removeAttribute("dark")
-                nomeAutor[i].removeAttribute("dark")
-                pAluno[i].removeAttribute("dark")
-            }
-
-
+            // for(let i = 0; i < alunos.length && i < nomeAutor.length && i < pAluno.length; i++){
+            //     alunos[i].removeAttribute("dark")
+            //     nomeAutor[i].removeAttribute("dark")
+            //     pAluno[i].removeAttribute("dark")
+            // }
             localStorage.removeItem('dark-mode')
-            
         }
    })
 })
