@@ -27,7 +27,7 @@ https://codificadorbin.netlify.app
 - JavaScript
 
 # Implementação em produção
-## Front end web: Netlify
+- Front end web: Netlify
 
 # Como executar o projeto
 Pré-requisitos: npm / yarn
